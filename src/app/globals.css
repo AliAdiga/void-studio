@@ -254,6 +254,53 @@ footer { padding: 56px 48px; border-top: 1px solid var(--border); display: grid;
 @keyframes ice-expand { from { transform: scale(0.6); opacity: 0; } to { transform: scale(1); opacity: 1; } }
 @keyframes electric { 0%,100% { opacity: 1; transform: scaleX(1); } 50% { opacity: .4; transform: scaleX(.8); } }
 
+/* ── HERO COLLAGE ── */
+.hero-collage {
+  position: absolute;
+  right: 0; top: 0; bottom: 0;
+  width: 58%;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+}
+.hero-collage::before {
+  content: '';
+  position: absolute;
+  top: 0; bottom: 0; left: 0;
+  width: 260px;
+  background: linear-gradient(to right, var(--black) 0%, rgba(8,8,8,0.6) 60%, transparent 100%);
+  z-index: 10;
+}
+.hero-collage::after {
+  content: '';
+  position: absolute;
+  top: 0; bottom: 0; right: 0;
+  width: 120px;
+  background: linear-gradient(to left, var(--black), transparent);
+  z-index: 10;
+}
+.cw {
+  position: absolute;
+  font-family: var(--font-bebas), sans-serif;
+  line-height: 0.88;
+  white-space: nowrap;
+  letter-spacing: -2px;
+  user-select: none;
+}
+.cl {
+  position: absolute;
+  font-family: var(--font-mono), monospace;
+  font-size: 9px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  user-select: none;
+  white-space: nowrap;
+}
+@keyframes drift-a { 0%,100%{transform:translateY(0) rotate(var(--r))} 50%{transform:translateY(-18px) rotate(var(--r))} }
+@keyframes drift-b { 0%,100%{transform:translateY(0) rotate(var(--r))} 50%{transform:translateY(14px) rotate(var(--r))} }
+@keyframes drift-c { 0%,100%{transform:translateY(0) rotate(var(--r))} 33%{transform:translateY(-10px) rotate(var(--r))} 66%{transform:translateY(8px) rotate(var(--r))} }
+@keyframes label-pulse { 0%,100%{opacity:var(--oa)} 50%{opacity:calc(var(--oa) + 0.3)} }
+
 /* ── RESPONSIVE ── */
 @media (max-width: 900px) {
   nav.main-nav { padding: 20px 24px; }

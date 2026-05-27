@@ -300,6 +300,41 @@ export default function Home() {
       {/* HERO */}
       <section className="hero">
         <div className="hero-bg" aria-hidden="true" />
+
+        {/* RIGHT-SIDE COLLAGE */}
+        <div className="hero-collage" aria-hidden="true">
+
+          {/* BIG BRAND WORDS */}
+          <span className="cw" style={{fontSize:200,color:"rgba(255,64,16,0.82)",top:"2%",left:"8%","--r":"-7deg",animation:"drift-a 7s ease-in-out infinite",textShadow:"0 0 60px rgba(255,64,16,0.35)"} as React.CSSProperties}>BLAZE</span>
+          <span className="cw" style={{fontSize:150,color:"rgba(255,90,30,0.6)",top:"30%",left:"18%","--r":"4deg",animation:"drift-b 9s ease-in-out 1s infinite"} as React.CSSProperties}>FIRE</span>
+          <span className="cw" style={{fontSize:190,color:"rgba(142,236,255,0.78)",top:"42%",left:"2%","--r":"-4deg",animation:"drift-a 8s ease-in-out 2s infinite",textShadow:"0 0 50px rgba(100,220,255,0.3)"} as React.CSSProperties}>CRYO</span>
+          <span className="cw" style={{fontSize:110,color:"rgba(202,255,0,0.72)",top:"12%",left:"48%","--r":"11deg",animation:"drift-c 10s ease-in-out 0.5s infinite",textShadow:"0 0 30px rgba(202,255,0,0.25)"} as React.CSSProperties}>NEXUS</span>
+          <span className="cw" style={{fontSize:140,color:"rgba(64,128,255,0.7)",top:"58%",left:"32%","--r":"-6deg",animation:"drift-b 7.5s ease-in-out 3s infinite",textShadow:"0 0 40px rgba(64,128,255,0.25)"} as React.CSSProperties}>VOLT</span>
+          <span className="cw" style={{fontSize:96,color:"rgba(219,180,112,0.65)",top:"70%",left:"8%","--r":"7deg",animation:"drift-a 11s ease-in-out 1.5s infinite"} as React.CSSProperties}>AURUM</span>
+          <span className="cw" style={{fontSize:80,color:"rgba(160,154,255,0.6)",top:"22%",left:"60%","--r":"-9deg",animation:"drift-c 8.5s ease-in-out 2.5s infinite"} as React.CSSProperties}>LUMÉ</span>
+          <span className="cw" style={{fontSize:72,color:"rgba(0,200,80,0.6)",top:"76%",left:"50%","--r":"3deg",animation:"drift-b 9.5s ease-in-out 0.8s infinite"} as React.CSSProperties}>NXT/SYS</span>
+          <span className="cw" style={{fontSize:60,color:"rgba(255,64,16,0.4)",top:"85%",left:"20%","--r":"-5deg",animation:"drift-a 12s ease-in-out 4s infinite"} as React.CSSProperties}>BLAZE</span>
+          <span className="cw" style={{fontSize:54,color:"rgba(142,236,255,0.35)",top:"5%",left:"70%","--r":"6deg",animation:"drift-c 10s ease-in-out 3.5s infinite"} as React.CSSProperties}>CRYO</span>
+
+          {/* SMALL FLOATING LABELS */}
+          <span className="cl" style={{top:"8%",left:"62%",color:"rgba(202,255,0,0.5)","--oa":"0.5","--r":"0deg",animation:"label-pulse 4s ease-in-out infinite"} as React.CSSProperties}>Reborn ✦</span>
+          <span className="cl" style={{top:"38%",left:"62%",color:"rgba(142,236,255,0.5)","--oa":"0.5","--r":"0deg",animation:"label-pulse 5s ease-in-out 1s infinite"} as React.CSSProperties}>Stay Frozen</span>
+          <span className="cl" style={{top:"52%",left:"6%",color:"rgba(255,100,30,0.5)","--oa":"0.5","--r":"0deg",animation:"label-pulse 3.5s ease-in-out 0.5s infinite"} as React.CSSProperties}>New Drop ✦</span>
+          <span className="cl" style={{top:"66%",left:"28%",color:"rgba(219,180,112,0.45)","--oa":"0.45","--r":"0deg",animation:"label-pulse 6s ease-in-out 2s infinite"} as React.CSSProperties}>Limited Edition 2024</span>
+          <span className="cl" style={{top:"82%",left:"52%",color:"rgba(142,236,255,0.45)","--oa":"0.45","--r":"0deg",animation:"label-pulse 4.5s ease-in-out 1.5s infinite"} as React.CSSProperties}>Ice Series · 2024</span>
+          <span className="cl" style={{top:"18%",left:"4%",color:"rgba(240,237,230,0.25)","--oa":"0.25","--r":"0deg",animation:"label-pulse 7s ease-in-out 3s infinite"} as React.CSSProperties}>Est. 1998 · 2024</span>
+          <span className="cl" style={{top:"92%",left:"8%",color:"rgba(64,128,255,0.4)","--oa":"0.4","--r":"0deg",animation:"label-pulse 5.5s ease-in-out 2.5s infinite"} as React.CSSProperties}>Electrify Your Game</span>
+
+          {/* COLOR ACCENT BLOCKS */}
+          <div style={{position:"absolute",top:"48%",left:"55%",width:6,height:80,background:"rgba(202,255,0,0.25)",animation:"drift-b 6s ease-in-out infinite"}} />
+          <div style={{position:"absolute",top:"25%",left:"75%",width:4,height:60,background:"rgba(255,64,16,0.2)",animation:"drift-a 8s ease-in-out 1s infinite"}} />
+          <div style={{position:"absolute",top:"72%",left:"42%",width:5,height:50,background:"rgba(100,220,255,0.2)",animation:"drift-c 7s ease-in-out 2s infinite"}} />
+
+          {/* subtle radial bg glows */}
+          <div style={{position:"absolute",top:"10%",left:"20%",width:400,height:400,borderRadius:"50%",background:"radial-gradient(circle,rgba(255,64,16,0.08) 0%,transparent 70%)",pointerEvents:"none"}} />
+          <div style={{position:"absolute",top:"50%",left:"10%",width:360,height:360,borderRadius:"50%",background:"radial-gradient(circle,rgba(100,220,255,0.07) 0%,transparent 70%)",pointerEvents:"none"}} />
+          <div style={{position:"absolute",top:"20%",left:"55%",width:300,height:300,borderRadius:"50%",background:"radial-gradient(circle,rgba(202,255,0,0.06) 0%,transparent 70%)",pointerEvents:"none"}} />
+        </div>
         <p className="hero-label">Creative &amp; Design Studio — Est. 2019</p>
         <h1 className="hero-title">We Build<br /><em>Bold</em><br />Worlds.</h1>
         <div className="hero-sub-row">
